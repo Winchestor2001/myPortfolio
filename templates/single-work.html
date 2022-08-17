@@ -1,0 +1,21 @@
+﻿{% load static %}
+<div class="single-work">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-10 offset-md-1 mb-40">
+                <h1 class="title mb-30">{{project.title}}</h1>
+                <p class="mb-30">{{ project.about_project }}</p>
+                <ul class="information">
+                    <li><span class="title">Client:</span> {{ project.client }}</li>
+                    <li><span class="title">Project link:</span> <a target="_blank" href="{{ project.project_url }}">{{ project.project_url }}</a></li>
+                    <li><span class="title">Category:</span> {{ project.category }}</li>
+                </ul>
+
+                <figure class="mt-30"><img style="width: 50%;" src="{{ project.image_1.url }}" alt=""></figure>
+                <figure class="mt-30"><img style="width: 50%;" src="{{ project.image_2.url }}" alt=""></figure>
+
+            </div>
+        </div>
+    </div>
+</div>
+
